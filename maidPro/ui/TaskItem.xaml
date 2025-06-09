@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maidPro.ui.TaskItem">
+    
+    <Border
+                        BackgroundColor="White"
+                        StrokeShape="RoundRectangle 20"
+                        StrokeThickness="0">
+        <Grid ColumnDefinitions="Auto,*,Auto" Padding="0,0,8,0">
+            <Border
+                            BackgroundColor="#FF8266"
+                            StrokeShape="RoundRectangle 20 0 20 0"
+                            StrokeThickness="0"
+                            WidthRequest="120">
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="room" FontSize="20" TextColor="#BA2200" FontFamily="PoppinsRegular" HorizontalOptions="Center"/>
+                    <Label x:Name="roomLabel" Text="1201" FontSize="36" TextColor="White" FontFamily="PoppinsSemiBold" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Border>
+            <StackLayout Grid.Column="1" Padding="8,8,0,8" Spacing="0">
+                <Label Text="GUEST-OUT" FontSize="18" TextColor="#727272" FontFamily="PoppinsBold"/>
+                <Label x:Name="cleanLabel" Text="Vacant clean" FontSize="16" TextColor="#727272" FontFamily="PoppinsMedium"/>
+                <Button  x:Name="roomStatusLabel" Text="COMPLETED"  FontSize="14" TextColor="White" FontFamily="PoppinsRegular" Padding="12,0,12,0" HeightRequest="26" HorizontalOptions="Start" CornerRadius="26" BackgroundColor="#8DDD99"/>
+            </StackLayout>
+            <Button Text="View" Grid.Column="2"  FontSize="20" TextColor="#939393" FontFamily="PoppinsRegular" Padding="12,0,12,0" HeightRequest="38" HorizontalOptions="Start" CornerRadius="38" BackgroundColor="#DDDDDD"/>
+        </Grid>
+    </Border>
+</ContentView>

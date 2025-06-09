@@ -1,4 +1,6 @@
-﻿namespace maidPro
+﻿using maidPro.Pages;
+
+namespace maidPro
 {
     public partial class App : Application
     {
@@ -9,7 +11,9 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            return new Window(new NavigationPage(
+                new MainPage()
+                ));
         }
     }
 }

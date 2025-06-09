@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            Title="hhhh"
+             BackgroundColor="Beige"
+             xmlns:ui="clr-namespace:maidPro.ui"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="maidPro.Pages.MainPage">
+    
+    <ScrollView VerticalScrollBarVisibility="Always">
+        <StackLayout>
+            <Button Text="open" Clicked="Button_Clicked" CornerRadius="10"/>
+            <Border 
+                Stroke="Aqua" 
+                StrokeShape="RoundRectangle 10,10,0,0"
+                HeightRequest="200"
+                BackgroundColor="Beige"
+                Margin="24">
+
+                <Label Text="sssssssssssss"></Label>
+            </Border>
+            <StackLayout Orientation="Vertical" Padding="16,0,16,0" Spacing="8">
+                <Label Text="sssssssssssss"></Label>
+                <Label Text="sssssssssssss"></Label>
+                <Label Text="sssssssssssss"></Label>
+                <Entry BackgroundColor="DarkCyan"/>
+                <!--<ui:TaskItem RoomNumber="123"/>-->
+                <StackLayout x:Name="TaskContain" Spacing="8">
+                    
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
